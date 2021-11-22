@@ -7,12 +7,12 @@ Patches
 -------
 anysize
 background image
+font2
 dynamic-cursor-color
 newterm
 scrollback
 sync
 undercurl
-font2
 xresources
 
 
