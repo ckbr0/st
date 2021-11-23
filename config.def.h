@@ -14,14 +14,6 @@ static char *font2[] = {
 static int borderpx = 2;
 
 /*
- * background image
- * expects farbfeld format
- * pseudo transparency fixes coordinates to the screen origin
- */
-static const char *bgfile = "/home/ckbr/.cache/wal/st_background.ff";
-static const int pseudotransparency = 1;
-
-/*
  * What program is execed by st depends of these precedence rules:
  * 1: program passed with -e
  * 2: scroll and/or utmp
@@ -112,6 +104,9 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+/* bg opacity */
+float alpha = 0.85;
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
@@ -139,6 +134,7 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
+	"black",
 };
 
 

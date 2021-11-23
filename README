@@ -5,8 +5,8 @@ st is a simple terminal emulator for X which sucks less.
 
 Patches
 -------
+alpha
 anysize
-background image
 font2
 dynamic-cursor-color
 newterm
